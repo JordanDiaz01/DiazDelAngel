@@ -19,17 +19,18 @@ Trabajos casuales, pero nada totalmente serio.
 
 ### *Lenguajes o tecnologías que me gustaria aprender*
 
-* React js
-* Flutter
-* Patrones de diseño
+| Desarrollo web | Desarrollo movil| Extra |
+|--|--|--|
+|React js|Flutter|Patrones de diseño|
 
 ### *En que pienso especializarme*
 
-Desarrollo de aplicaciones moviles
+         Desarrollo de aplicaciones moviles
 
-!(src/moviles.jpg)
+![](/src/moviles.jpg)
 
+### *Hobbies*
 
-
+> jugar videojuegos y ver series.
 
 

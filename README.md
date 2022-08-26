@@ -2,4 +2,6 @@
 
 ## PROGRAMACIÓN WEB
 
-*Nombre del alumno: 
+**Nombre del alumno:** *Jordan Díaz Del Angel*
+
+**Número de Control:** *19100170*
