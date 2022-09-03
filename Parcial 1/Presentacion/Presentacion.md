@@ -2,7 +2,7 @@
 
 
 ## **Jordan Díaz Del Angel N° Control 19100170**
-</bt>
+</br>
 
 ### *Historial academico* 
 Me encuentro cursando septimo semestre de la carrera de ISC, tengo un total de 37 materias aprobadas. Cuento con un promedio de 88 y soy alumno irrregular.
