@@ -4,24 +4,46 @@
     padding: 0;
 }
 
+body{
+    background-color: #ea5455;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
 ul{
     list-style: none;
-    width: 200px;
-    height: 500px;
+    width: 500px;
+    /*height: 500px;*/
+    box-shadow: 7px 13px 37px black;
+    
+    
+}
+
+li{
+    font-family: 'Times New Roman', Times, serif;
     
 }
 
 ul>li>ul{
     display:none ;
+    
 }
+
 ul>li:hover>ul{
     display: block;
     height: 100%;
+   
 }
 
+
 .opcion{
-    background: blue;
+    background: #212121;
     color: white;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+    
 }
 
 .subOpcion{
