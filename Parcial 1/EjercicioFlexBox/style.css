@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    background-color: blueviolet;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.caja{
+    height: auto;
+    background-color: aqua;
+    margin: 10px;
+    text-align: center;
+}
+
+.content{
+    display: block;
+    padding-top: 5px;
+}
+#caja1{flex-grow: 1;}
+#caja2{flex-grow: 3;}
+
+@media screen and (max-width:399px) {
+    /*Estilos aplicacbles*/
+    .contenedor{
+        flex-direction: column;
+    }
+    .content{
+        float: left;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and(min-width:200px)and (max-width:370px){
+    .content{
+        flex-direction: row;
+    }
+}
+
