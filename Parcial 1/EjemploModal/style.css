@@ -1,0 +1,40 @@
+
+/*A la caja dentro de la cual se posicionará el modal
+le damos un valor de z-index muy alto para que se coloque encima de todo lo demás
+Inicialmente está invisible con el valor de opaciodad a  cero
+y con la propiedad pointer-events a none evitamos que responda a los eventos del ratón*/
+
+.ventanaModal{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: silver;
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* La caja que contiene el modal solamente se activa cuando tenga la pseudoclase :target*/
+
+.ventanaModal:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* Posicionamos la ventana modal <div> dentro de la caja que la contiene .ventanaModal*/
+
+.ventanaModal>div{
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.botonAbrir:hover{background-color: blue;  color: white;}
+.botonCerrar:hover{background-color: blue; color: white;}

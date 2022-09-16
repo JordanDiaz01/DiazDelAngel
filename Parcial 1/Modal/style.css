@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --backmin:#ea5455;
+    --box:7px 13px 37px black;
+}
+body{
+    background-color: #ea5455;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+ul{
+    list-style: none;
+    width: 500px;
+    /*height: 500px;*/
+    box-shadow: 7px 13px 37px black;
+    
+    
+}
+
+li{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+ul>li>ul{
+    display:none ;
+    
+}
+
+ul>li:hover>ul{
+    display: block;
+    height: 100%;
+   
+}
+
+
+.opcion{
+    background: #212121;
+    color: white;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+    
+}
+
+.subOpcion{
+    padding-left: 20px;
+}
+
+.ventanaModal{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: silver;
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* La caja que contiene el modal solamente se activa cuando tenga la pseudoclase :target*/
+
+.ventanaModal:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* Posicionamos la ventana modal <div> dentro de la caja que la contiene .ventanaModal*/
+
+.ventanaModal > div{
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: var(--box);
+}
+
+a{
+    margin-bottom: 1rem;
+    color: white;
+}
+.botonCerrar{
+    color: red;
+}
+.botonAbrir:hover{
+    background-color: #212121;  
+    color: white;
+    box-shadow: var(--box);
+
+}
+.botonCerrar:hover{
+    background-color: blue; 
+    color: white;
+
+}
