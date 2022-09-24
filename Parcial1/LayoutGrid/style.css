@@ -9,11 +9,12 @@
     height: 100vh;
     background-color: blue;
     display: grid;
-    grid-template-columns: 10% 45% 45%;
-    grid-template-rows: 20% 70% 10%;
-    grid-template-areas: 'enca enca enca'
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-areas: 'menulat enca enca'
                         'menulat col1 col2'
-                        'pie pie pie'
+                        'menulat col3 col4'
+                        'menulat col3 col4'
     ;
     justify-content: stretch;
     align-content: stretch;
@@ -22,6 +23,7 @@
     align-items: stretch;
 
     grid-auto-flow: column;
+    text-align: center;
 }
 
 .caja{
@@ -30,13 +32,16 @@
     background-color: aqua;
     text-align: center;
     border: 1px solid red;
+    padding-top: 2rem;
 }
 
 #enca{grid-area: enca;}
 #menulat{grid-area: menulat;}
 #col1{grid-area: col1;}
 #col2{grid-area: col2;}
-#pie{grid-area: pie;}
+#col3{grid-area: col3;}
+#col4{grid-area: col4;}
+/*#pie{grid-area: pie;*/
 /*#caja1{
     grid-column-start: 1;
     grid-column-end: 4;
@@ -46,12 +51,13 @@
     .contenedor{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 200px 200px 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
         grid-template-areas: 'enca'
                             'menulat'
                             'col1'
                             'col2'
-                             'pie'
+                             'col3'
+                             'col4'
         ;
     }
 }
