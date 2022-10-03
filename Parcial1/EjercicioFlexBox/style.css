@@ -27,6 +27,13 @@
 #caja1{flex-grow: 1;}
 #caja2{flex-grow: 3;}
 
+input{display: none;}
+input:checked + .caja{
+    width: 0px;
+}
+input:checked + .content{
+    margin-left: 0px;
+}
 @media screen and (max-width:399px) {
     /*Estilos aplicacbles*/
     .contenedor{
