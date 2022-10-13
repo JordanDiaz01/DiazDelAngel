@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja" id="enca">caja 1</div>
+        <div class="caja" id="menulat">caja 2</div>
+        <div class="caja" id="col1">caja 3</div>
+        <div class="caja" id="col2">caja 4</div>
+        <div class="caja" id="col3">caja 5</div>
+        <div class="caja" id="col4">caja 6</div>
+    </div>
+    <script>
+        let elem=document.querySelector('.contenedor')
+        
+        const cambiarCaja= (event)=>{
+            console.log(event)
+            if(document.getElementById(event.target.id).classList.contains('caja')){
+                document.getElementById(event.target.id).classList.toggle('cajaRoja')
+                document.getElementById(event.target.id).style.backgroundColor='red'
+            }
+            if(event.target.id=='enca'){
+                elem.removeEventListener('click',cambiarCaja)
+            }
+        }
+        elem.addEventListener('click',cambiarCaja)
+    </script>
+</body>
+</html>
