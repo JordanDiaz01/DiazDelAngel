@@ -29,7 +29,7 @@
 
 input{display: none;}
 input:checked + .caja{
-    width: 0px;
+    display: none;
 }
 input:checked + .content{
     margin-left: 0px;
