@@ -16,5 +16,16 @@
         <div class="caja" id="col3">caja 5</div>
         <div class="caja" id="col4">caja 6</div>
     </div>
+    <script>
+        document.querySelector(".contenedor").addEventListener("click",(event)=>{
+            console.log(event)
+            if(document.getElementById(event.target.id).classList("caja").contains("caja")){
+                document.getElementById(event.target.id).classList("caja").toggle("cajaXD")
+                
+            }
+
+        })
+
+    </script>
 </body>
 </html>
