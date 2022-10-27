@@ -63,7 +63,6 @@ const renderUser=(data)=>{
 $(document).ready(() => {
     $("#col1").click((e)=>{
         users()
-        //console.log('menu presionado')    
         })
     
 })
