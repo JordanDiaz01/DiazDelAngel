@@ -15,6 +15,7 @@ module.exports={
                 inject:'body'
             }
         )
-    ]
+    ],
+    mode:'production',
 
 }

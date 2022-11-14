@@ -1,3 +1,6 @@
+const Swal = require('sweetalert2')
 
+alert('ALERTA CON JS PURO')
 
-alert('USANDO WEBPACK')
+Swal.fire('ALERTA CON SWEET ALERT 2')
+console.log('usando webpack')
