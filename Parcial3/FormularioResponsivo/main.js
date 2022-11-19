@@ -53,13 +53,24 @@ buttons.forEach(el => el.addEventListener('click',()=>{
 // })
 
 
-const listaEmpleados= async () =>{
-    const res= await fetch('./conexion.php')
-    const data= await res.json()
-    console.log(data)
-}
+// const listaEmpleados= async () =>{
+//     const res= await fetch('./conexion.php')
+//     const empleados= await res.json()
+
+//     let content= ''
+//     empleados.forEach((emp)=>{
+//         content=+`
+//         <tr>
+//             <td>${emp.Nombre}</td>
+//         </tr>
+        
+        
+//         `
+//     })
+//     console.log(data)
+// }
 
 
-window.addEventListener('load',async()=>{
-    await listaEmpleados()
-})
+// window.addEventListener('load',async()=>{
+//     await listaEmpleados()
+// })
