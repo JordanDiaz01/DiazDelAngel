@@ -10,27 +10,18 @@
     <form id="form">
     <label for="nombre">nombre</label>
     <input type="text" id="nombre" name="nombre">
-
     <input type="button" value="crear pdf" id="btn">
 </form>
-    
-    
-    
     <script>
          
         document.getElementById('btn').addEventListener('click',async()=>{
-           
             const form = new FormData(document.getElementById('form'))
-            
-
             const results = await fetch('crearpdf.php',{
                 method:'POST',
                 body: form
             })
-
             let data= await results.blob()
             console.log(data)
-
            let archivo= URL.createObjectURL(data)
             window.open(archivo)
     })
